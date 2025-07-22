@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color:blanchedalmond;
+    background-color:bisque;
     color:#333;
     text-align: center;
     line-height: 3;
@@ -19,7 +19,7 @@ body{
      padding:50px 20px;
 }
 
-.hero h2{
+.hero h1{
     font: size 32px;
 }
 
@@ -29,7 +29,21 @@ gap:10px;
 }
 
 .grid div{
-    background-color:aqua;
+    background-color:rgb(243, 121, 186);
     padding:20px;
     border-radius:40px;
+}
+
+@media (max-width: 768px){
+    .hero h1{font-size:40px;}
+    body{background-color:blueviolet;}
+}
+
+.hero-text{
+    display:flex;
+    flex-direction: column;
+}
+
+.hero img{
+    border-radius:50%;
 }
