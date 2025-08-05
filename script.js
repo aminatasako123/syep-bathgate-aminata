@@ -1,4 +1,86 @@
-// console.log("Hello World!");
+const reviews =[
+
+{
+    id: 1,
+    name: 'Susan Smith',
+    job: 'Web Developer',
+    img: 'download.jpeg',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto asperiores debitis incidunt, eius earum ipsam cupiditate libero? Iste, doloremque nihil?',
+},
+
+{
+    id: 2,
+    name: 'Anna Johnson',
+    job: 'Web Designer',
+    img: '#',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto asperiores debitis incidunt, eius earum ipsam cupiditate libero? Iste, doloremque nihil?',
+},
+
+{
+    id: 3,
+    name: 'Peter Jones',
+    job: 'Intern',
+    img: '#',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto asperiores debitis incidunt, eius earum ipsam cupiditate libero? Iste, doloremque nihil?',
+},
+];
+
+//select items
+const img= document.getElementById('person-img');
+const author = document.getElementById('author');
+const job = document.getElementById('job');
+const info = document.getElementById('info');
+
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+
+let currentItem = 0;
+
+window.addEventListener('DOMContentLoaded', function(){
+   const item = reviews[currentItem];
+   img.src = item.img;
+   author.textContent = item.name;
+   job.textContent = item.job;
+   info.textContent = item.text;
+});
+
+function showPerson(person){
+    const item = reviews[person];
+    img.src = item.img;
+   author.textContent = item.name;
+   job.textContent = item.job;
+   info.textContent = item.text;
+}
+
+nextBtn.addEventListener('click', function (){
+currentItem++;
+if(currentItem > reviews,length - 1){
+    currentItem = 0;
+}
+showPerson(currentItem);
+});
+
+
+prevBtn.addEventListener('click', function (){
+currentItem--;
+if(currentItem < 0 ){
+    currentItem = reviews.length - 1;
+}
+showPerson(currentItem);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+//console.log("Hello World!")
 
 // let myString = "a2b3c";
 // console.log(myString);
@@ -26,15 +108,15 @@
 
 // introduction("Aminata", 14)
 
-const hour = new Date().getHours();
-let greeting = "";
+// const hour = new Date().getHours();
+// let greeting = "";
 
-if (hour<12){
-    greeting = "Good morning";
-}else if (hour < 18){
-    greeting = "Good afternoon";
-}else{
-    greeting ="Good evening";
-}
+// if (hour<12){
+//     greeting = "Good morning";
+// }else if (hour < 18){
+//     greeting = "Good afternoon";
+// }else{
+//     greeting ="Good evening";
+// }
 
-document.getElementById("greeting").innerText=greeting;
+// document.getElementById("greeting").innerText=greeting;
