@@ -1,30 +1,30 @@
+
 const reviews =[
 
 {
     id: 1,
-    name: 'Susan Smith',
-    job: 'Web Developer',
-    img: 'download.jpeg',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto asperiores debitis incidunt, eius earum ipsam cupiditate libero? Iste, doloremque nihil?',
+    name: 'Makayla amoto',
+    job: 'web desighner', 
+    img: 'https://scontent-lga3-2.xx.fbcdn.net/v/t1.15752-9/528025557_1495140968358821_8081948592148666426_n.jpg?stp=dst-jpg_p480x480_tt6&amp;_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=0024fc&amp;_nc_ohc=2j2dQjv6teAQ7kNvwEN6ssS&amp;_nc_oc=AdliAm0F2JMKxAAsNbqj_KRR9-mmzMeSIQihOTl2r9p5ME7xGFBWsRcmJBkUd0cdaFA&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=scontent-lga3-2.xx&amp;oh=03_Q7cD3AHISjdAoyZaGM9ZybHerZKp_RCqKZcNRrRdfXWB1TAXtA&amp;oe=68C1CF5C',
+    text: 'working with aminata was a great experience,she is a hardworker and i would recommend her to anyone looking for a web desighner',
 },
 
 {
     id: 2,
-    name: 'Anna Johnson',
+    name: 'Margareth Sanchez',
     job: 'Web Designer',
-    img: '#',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto asperiores debitis incidunt, eius earum ipsam cupiditate libero? Iste, doloremque nihil?',
+    img: 'https://scontent-lga3-3.xx.fbcdn.net/v/t1.15752-9/526594886_1293349285714981_854072290Lorem ipsum dolor sit amet consectetur adipisicing e7347812608_n.jpg?stp=dst-jpg_s640x640_tt6&amp;_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=0024fc&amp;_nc_ohc=ZDVQLQosvdQQ7kNvwFzXm-p&amp;_nc_oc=Adm8GN_HznWmh2QrAkbCiEzhkcU6Xwg-5K2mzUSTQ9xJrMpCfiB-5_oXxUrYcsQAug4&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=scontent-lga3-3.xx&amp;oh=03_Q7cD3AE7l5yOYOku9KB2PO0RaWTWxVY1ebMOV3utSdcwL-c5JQ&amp;oe=68BDC4C2',
+    text: ' me and aminata have not only worked together but are also classmates, she is a great person to work with and i would recommend her to anyone looking for a web desighner',
 },
 
 {
     id: 3,
-    name: 'Peter Jones',
-    job: 'Intern',
-    img: '#',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto asperiores debitis incidunt, eius earum ipsam cupiditate libero? Iste, doloremque nihil?',
-},
+    name: 'Shelby Shoup',
+    job: 'Teacher',
+    img: 'https://scontent-lga3-1.xx.fbcdn.net/v/t1.15752-9/527307298_1576785950393501_7499758611809741462_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=0024fc&amp;_nc_ohc=-Vfry1uKYvcQ7kNvwF58X7c&amp;_nc_oc=Adn_IFxryS1oUNdBoTymYMLvnn9oudU-5gnqB3l4yE6qZg0ZFdOvImBxTXMHCpZTU7E&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=scontent-lga3-1.xx&amp;oh=03_Q7cD3AEPH2o7JZPMtnJnn83fedRCDb_KmcE2KBCMm30a66AEfw&amp;oe=68BDEEF6',
+    text: 'Aminata is a great student, she helps her classmates and is always willing to help others, i would recommend her to anyone looking for a website desighner',
+}
 ];
-
 //select items
 const img= document.getElementById('person-img');
 const author = document.getElementById('author');
@@ -52,19 +52,19 @@ function showPerson(person){
    info.textContent = item.text;
 }
 
-nextBtn.addEventListener('click', function (){
-currentItem++;
-if(currentItem > reviews,length - 1){
-    currentItem = 0;
+prevtBtn.addEventListener('click', function (){
+currentItem--;
+if(currentItem < 0 ) {
+    currentItem = reviews.length-1;
 }
 showPerson(currentItem);
 });
 
 
-prevBtn.addEventListener('click', function (){
+nextBtn.addEventListener('click', function (){
 currentItem--;
-if(currentItem < 0 ){
-    currentItem = reviews.length - 1;
+if(currentItem >  reviews.length - 1){
+    currentItem = 0;
 }
 showPerson(currentItem);
 });
