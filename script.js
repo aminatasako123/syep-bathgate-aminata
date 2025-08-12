@@ -5,7 +5,7 @@ const reviews =[
     name: 'Makayla amoto',
     job: 'web desighner', 
     img: 'photo.jpg',
-    text: 'working with aminata was a great exprience she is a hardworker and i would recommend her to anyone looking for a web desighner',
+    text: 'working with aminata was a great exprience shes thoughtful and dedicated to what she does',
 },
 
 {
@@ -13,7 +13,7 @@ const reviews =[
     name: 'Margareth Sanchez',
     job: 'Web Designer',
     img: 'picture.jpg',
-    text: ' me and aminata have not only worked together but are also classmates, she is a great person to work with and i would recommend her to anyone looking for a web desighner',
+    text: ' me and aminata have not only worked together but are also classmates, she is a great person to work with ',
 },
 
 {
